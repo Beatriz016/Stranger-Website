@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'StrangerFont';
+    src: url('stranger-things-font/stranger things/Benguiat Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'StrangerOutline';
+    src: url('stranger-things-font/stranger things/Stranger Things Outlined.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #07090B;
+}
+
+
+a, .site-header {
+  color: #ED1C24;
+  text-decoration: none;
+  font-family: StrangerFont;
+  font-size: 15px;
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Pushes logo to the left, links to the right */
+  align-items: center; /* Vertically centers the items */
+  padding: 0 20px;
+  height: 70px;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /*space between right items */
+}
+
+#profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* prevents distortion */
+    margin-left: 5px;
+}
+
+#logo {
+    width: 100px;
+    object-fit: cover;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #1A2026;
+}
